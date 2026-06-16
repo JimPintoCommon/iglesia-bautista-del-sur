@@ -7,7 +7,6 @@ const translations = {
     navAbout: "Nosotros",
     navServices: "Servicios",
     navSermons: "Predicaciones",
-    navMinistries: "Ministerios",
     navVisit: "Visitar",
     navContact: "Contacto",
     headerCta: "Planear visita",
@@ -17,6 +16,7 @@ const translations = {
       "Iglesia Bautista Del Sur es una comunidad centrada en Cristo donde tu familia puede encontrar Palabra, oración, amistad y propósito.",
     heroPrimary: "Planear mi visita",
     heroSecondary: "Ver horarios",
+    directionsButton: "Cómo llegar",
     campusLabel: "Iglesia local",
     heroNoteLabel: "Servicio dominical",
     heroNoteText: "Domingos 10:30 AM MT",
@@ -24,8 +24,8 @@ const translations = {
     quickServiceValue: "Domingos 10:30 AM MT",
     quickStudyLabel: "Escuela bíblica",
     quickStudyValue: "Miércoles 7:00 PM MT",
-    quickLocationLabel: "Noche de oración",
-    quickLocationValue: "Viernes 7:00 PM MT",
+    quickLocationLabel: "Ubicación",
+    quickLocationValue: "124 Durffee St",
     homeKicker: "Lo esencial",
     homeIntroTitle: "Un lugar para conocer a Jesús y caminar acompañado.",
     featureAboutLabel: "Nuestra historia",
@@ -34,9 +34,9 @@ const translations = {
     featureServicesLabel: "Reuniones",
     featureServicesTitle: "Servicios y estudios",
     featureServicesText: "Encuentra horarios, qué esperar y cómo participar durante la semana.",
-    featureSermonsLabel: "Predicaciones",
-    featureSermonsTitle: "Ver sermones en línea",
-    featureSermonsText: "Accede a transmisiones en vivo y mensajes recientes del Pastor Fredi.",
+    featureVisitLabel: "Primera visita",
+    featureVisitTitle: "Planifica tu visita",
+    featureVisitText: "Encuentra dirección, horario principal y pasos sencillos para venir por primera vez.",
     aboutKicker: "Nuestra iglesia",
     aboutTitle: "Fe bíblica, comunidad cercana y esperanza para cada familia.",
     aboutLead:
@@ -61,6 +61,23 @@ const translations = {
     valueServiceText: "Servimos a la iglesia y a nuestros vecinos con humildad y compasión.",
     valueWelcomeTitle: "Bienvenida sincera",
     valueWelcomeText: "Recibimos a cada persona con respeto, paciencia y hospitalidad.",
+    beliefsKicker: "Nuestra fe",
+    beliefsTitle: "Creencias bautistas centradas en Cristo y la Biblia.",
+    beliefsLead:
+      "Como iglesia bautista del sur, nuestras convicciones siguen el énfasis bíblico expresado en el Baptist Faith and Message 2000.",
+    beliefScriptureTitle: "La Biblia",
+    beliefScriptureText: "Creemos que la Biblia es la Palabra de Dios y la autoridad para la fe y la vida.",
+    beliefGodTitle: "Dios",
+    beliefGodText: "Creemos en un solo Dios vivo y verdadero: Padre, Hijo y Espíritu Santo.",
+    beliefJesusTitle: "Jesucristo",
+    beliefJesusText: "Creemos que Jesús murió por nuestros pecados, resucitó y salva a todo el que cree en Él.",
+    beliefChurchTitle: "La iglesia",
+    beliefChurchText: "Creemos que la iglesia local adora, enseña, sirve y anuncia el evangelio.",
+    beliefOrdinancesTitle: "Bautismo y Cena del Señor",
+    beliefOrdinancesText: "Practicamos el bautismo de creyentes y la Cena del Señor como actos de obediencia.",
+    beliefMissionTitle: "Misiones",
+    beliefMissionText: "Creemos que cada creyente y cada iglesia son llamados a compartir a Cristo.",
+    beliefsLink: "Leer Baptist Faith and Message 2000",
     servicesKicker: "Reuniones",
     servicesTitle: "Horarios y oportunidades para reunirse.",
     servicesLead:
@@ -90,12 +107,12 @@ const translations = {
     liveLabel: "En vivo",
     liveTitle: "Transmisión del servicio",
     liveText:
-      "Agrega aquí el enlace oficial de Facebook Live, YouTube o la plataforma donde la iglesia transmite sus servicios.",
-    watchLiveButton: "Ver transmisión",
-    streamHelpButton: "Pedir enlace",
+      "La información de transmisión estará disponible pronto. Por ahora, llama a la iglesia para preguntar cómo ver las predicaciones del Pastor Fredi.",
+    streamCallButton: "Llamar para información",
+    streamHelpButton: "Contacto",
     archiveLabel: "Mensajes recientes",
     archiveTitle: "Archivo de predicaciones",
-    archiveText: "Espacio para enlazar el canal de YouTube, Facebook videos o una lista de sermones.",
+    archiveText: "Cuando el enlace oficial esté listo, esta sección puede dirigir a los mensajes grabados.",
     scheduleStreamLabel: "Horario",
     scheduleStreamTitle: "Domingos 10:30 AM MT",
     scheduleStreamText: "La transmisión puede aparecer cuando el servicio esté en vivo.",
@@ -137,9 +154,8 @@ const translations = {
     contactAddressValue: "124 Durffee St, Syracuse, KS 67878",
     contactPhoneLabel: "Teléfono",
     contactPhoneValue: "(620) 384-8104",
-    contactEmailLabel: "Correo",
-    contactEmailValue: "Agrega el correo aquí",
-    mapPlaceholder: "Mapa o ubicación de Google aquí",
+    contactDirectionsLabel: "Direcciones",
+    mapPlaceholder: "Abrir ubicación en Google Maps",
     formName: "Nombre",
     formEmail: "Correo electrónico",
     formMessage: "Mensaje",
@@ -180,7 +196,6 @@ const translations = {
     navAbout: "About",
     navServices: "Services",
     navSermons: "Sermons",
-    navMinistries: "Ministries",
     navVisit: "Visit",
     navContact: "Contact",
     headerCta: "Plan a visit",
@@ -190,6 +205,7 @@ const translations = {
       "Iglesia Bautista Del Sur is a Christ-centered community where your family can find Scripture, prayer, friendship, and purpose.",
     heroPrimary: "Plan my visit",
     heroSecondary: "View times",
+    directionsButton: "Get directions",
     campusLabel: "Local church",
     heroNoteLabel: "Sunday service",
     heroNoteText: "Sundays 10:30 AM MT",
@@ -197,8 +213,8 @@ const translations = {
     quickServiceValue: "Sundays 10:30 AM MT",
     quickStudyLabel: "Bible School",
     quickStudyValue: "Wednesdays 7:00 PM MT",
-    quickLocationLabel: "Prayer night",
-    quickLocationValue: "Fridays 7:00 PM MT",
+    quickLocationLabel: "Location",
+    quickLocationValue: "124 Durffee St",
     homeKicker: "Essentials",
     homeIntroTitle: "A place to know Jesus and walk with others.",
     featureAboutLabel: "Our story",
@@ -207,9 +223,9 @@ const translations = {
     featureServicesLabel: "Gatherings",
     featureServicesTitle: "Services and studies",
     featureServicesText: "Find service times, what to expect, and how to participate during the week.",
-    featureSermonsLabel: "Sermons",
-    featureSermonsTitle: "Watch sermons online",
-    featureSermonsText: "Access live streams and recent messages from Pastor Fredi.",
+    featureVisitLabel: "First visit",
+    featureVisitTitle: "Plan your visit",
+    featureVisitText: "Find the address, main service time, and simple steps for your first visit.",
     aboutKicker: "Our church",
     aboutTitle: "Biblical faith, close community, and hope for every family.",
     aboutLead:
@@ -234,6 +250,23 @@ const translations = {
     valueServiceText: "We serve the church and our neighbors with humility and compassion.",
     valueWelcomeTitle: "Sincere welcome",
     valueWelcomeText: "We receive each person with respect, patience, and hospitality.",
+    beliefsKicker: "Our faith",
+    beliefsTitle: "Baptist beliefs centered on Christ and the Bible.",
+    beliefsLead:
+      "As a Southern Baptist church, our convictions follow the biblical emphasis expressed in the Baptist Faith and Message 2000.",
+    beliefScriptureTitle: "The Bible",
+    beliefScriptureText: "We believe the Bible is God's Word and the authority for faith and life.",
+    beliefGodTitle: "God",
+    beliefGodText: "We believe in one living and true God: Father, Son, and Holy Spirit.",
+    beliefJesusTitle: "Jesus Christ",
+    beliefJesusText: "We believe Jesus died for our sins, rose again, and saves all who believe in Him.",
+    beliefChurchTitle: "The church",
+    beliefChurchText: "We believe the local church worships, teaches, serves, and proclaims the gospel.",
+    beliefOrdinancesTitle: "Baptism and the Lord's Supper",
+    beliefOrdinancesText: "We practice believer's baptism and the Lord's Supper as acts of obedience.",
+    beliefMissionTitle: "Missions",
+    beliefMissionText: "We believe every believer and every church are called to share Christ.",
+    beliefsLink: "Read Baptist Faith and Message 2000",
     servicesKicker: "Gatherings",
     servicesTitle: "Times and opportunities to gather.",
     servicesLead:
@@ -263,12 +296,12 @@ const translations = {
     liveLabel: "Live",
     liveTitle: "Service stream",
     liveText:
-      "Add the official Facebook Live, YouTube, or platform link where the church streams its services.",
-    watchLiveButton: "Watch stream",
-    streamHelpButton: "Ask for link",
+      "Streaming information will be available soon. For now, call the church to ask how to watch Pastor Fredi's preaching.",
+    streamCallButton: "Call for information",
+    streamHelpButton: "Contact",
     archiveLabel: "Recent messages",
     archiveTitle: "Sermon archive",
-    archiveText: "Space to link the YouTube channel, Facebook videos, or a sermon list.",
+    archiveText: "When the official link is ready, this section can point visitors to recorded messages.",
     scheduleStreamLabel: "Schedule",
     scheduleStreamTitle: "Sundays 10:30 AM MT",
     scheduleStreamText: "The stream can appear when the service is live.",
@@ -310,9 +343,8 @@ const translations = {
     contactAddressValue: "124 Durffee St, Syracuse, KS 67878",
     contactPhoneLabel: "Phone",
     contactPhoneValue: "(620) 384-8104",
-    contactEmailLabel: "Email",
-    contactEmailValue: "Add the email here",
-    mapPlaceholder: "Google map or location here",
+    contactDirectionsLabel: "Directions",
+    mapPlaceholder: "Open location in Google Maps",
     formName: "Name",
     formEmail: "Email",
     formMessage: "Message",
@@ -348,7 +380,7 @@ const translations = {
 };
 
 const supportedLanguages = ["es", "en"];
-const routes = ["home", "about", "services", "sermons", "ministries", "visit", "contact", "privacy"];
+const routes = ["home", "about", "beliefs", "services", "sermons", "ministries", "visit", "contact", "privacy"];
 const savedLanguage = localStorage.getItem("siteLanguage");
 const browserLanguage = navigator.language.toLowerCase().startsWith("en") ? "en" : "es";
 let currentLanguage = supportedLanguages.includes(savedLanguage) ? savedLanguage : browserLanguage;
@@ -361,15 +393,9 @@ function getRouteFromHash() {
 function setActiveRoute(route) {
   const safeRoute = routes.includes(route) ? route : "home";
 
-  document.querySelectorAll("[data-route]").forEach((view) => {
-    view.classList.toggle("is-active", view.dataset.route === safeRoute);
-  });
-
   document.querySelectorAll("[data-route-link]").forEach((link) => {
     link.classList.toggle("is-active", link.dataset.routeLink === safeRoute);
   });
-
-  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function applyLanguage(language) {

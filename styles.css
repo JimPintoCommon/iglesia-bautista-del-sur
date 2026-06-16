@@ -20,6 +20,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 118px;
 }
 
 body {
@@ -184,10 +185,6 @@ a {
 }
 
 .page-view {
-  display: none;
-}
-
-.page-view.is-active {
   display: block;
 }
 
@@ -365,6 +362,7 @@ h2 {
     linear-gradient(90deg, rgba(23, 42, 53, 0.98), rgba(23, 42, 53, 0.9)),
     var(--navy);
   color: var(--white);
+  scroll-margin-top: 118px;
 }
 
 .page-hero.compact {
@@ -466,8 +464,49 @@ h2 {
 
 .values-section,
 .schedule-section,
-.two-column-band {
+.two-column-band,
+.beliefs-section {
   background: var(--soft);
+}
+
+.beliefs-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.beliefs-grid article {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(32, 38, 43, 0.06);
+  padding: 22px;
+}
+
+.beliefs-grid span {
+  color: var(--clay);
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.beliefs-grid h2 {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 1.12rem;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.beliefs-grid p {
+  color: var(--muted);
+}
+
+.text-link {
+  color: var(--teal);
+  display: inline-flex;
+  font-weight: 800;
+  margin-top: 22px;
 }
 
 .leadership-section {
@@ -685,6 +724,18 @@ h2 {
   padding: 26px;
 }
 
+.map-placeholder:hover {
+  border-color: rgba(29, 108, 101, 0.42);
+  color: var(--teal);
+}
+
+.visit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
 .policy-section {
   display: grid;
   gap: 22px;
@@ -851,6 +902,7 @@ h2 {
   .stream-section,
   .feature-grid,
   .value-grid,
+  .beliefs-grid,
   .schedule-grid,
   .schedule-grid.detailed {
     grid-template-columns: 1fr;
