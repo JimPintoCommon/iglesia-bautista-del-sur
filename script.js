@@ -142,7 +142,7 @@ const translations = {
     footerText: "Compartiendo a Cristo con nuestra comunidad.",
     pageDescription:
       "Iglesia Bautista Del Sur: una iglesia hispana centrada en Cristo, la familia y la comunidad.",
-    heroAlt: "Congregación reunida afuera de la iglesia",
+    heroAlt: "Ilustración del edificio de Iglesia Bautista Del Sur",
     formAlert: "Gracias. En el sitio final, este formulario se conectará al correo de la iglesia.",
   },
   en: {
@@ -288,7 +288,7 @@ const translations = {
     footerText: "Sharing Christ with our community.",
     pageDescription:
       "Iglesia Bautista Del Sur: a Hispanic church centered on Christ, family, and community.",
-    heroAlt: "Congregation gathered outside the church",
+    heroAlt: "Illustration of the Iglesia Bautista Del Sur building",
     formAlert: "Thank you. In the final site, this form will connect to the church email.",
   },
 };
