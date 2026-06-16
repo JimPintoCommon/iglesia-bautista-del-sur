@@ -312,6 +312,12 @@ h2 {
     var(--navy);
 }
 
+.page-hero.sermons-hero {
+  background:
+    linear-gradient(90deg, rgba(23, 42, 53, 0.98), rgba(161, 79, 52, 0.76)),
+    var(--navy);
+}
+
 .intro-section {
   padding-top: clamp(70px, 8vw, 96px);
 }
@@ -358,6 +364,7 @@ h2 {
 .feature-card,
 .value-grid article,
 .schedule-card,
+.stream-card,
 .visit-card,
 .contact-form,
 .contact-details article {
@@ -532,6 +539,58 @@ h2 {
   color: rgba(255, 255, 255, 0.78);
 }
 
+.stream-section {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+}
+
+.stream-card.featured {
+  background: var(--navy);
+  color: var(--white);
+  min-height: 360px;
+}
+
+.stream-card.featured p,
+.stream-card.featured span {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.stream-card span {
+  color: var(--clay);
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.stream-card h2 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+}
+
+.stream-card h3 {
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.stream-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.button.outline {
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  color: var(--white);
+}
+
+.stream-grid {
+  display: grid;
+  gap: 18px;
+}
+
 .contact-section {
   background: var(--paper);
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 520px);
@@ -659,6 +718,7 @@ h2 {
   .two-column-band,
   .contact-section,
   .visit-layout,
+  .stream-section,
   .feature-grid,
   .value-grid,
   .schedule-grid,

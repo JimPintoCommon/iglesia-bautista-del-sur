@@ -4,6 +4,7 @@ const translations = {
     navHome: "Inicio",
     navAbout: "Nosotros",
     navServices: "Servicios",
+    navSermons: "Predicaciones",
     navMinistries: "Ministerios",
     navVisit: "Visitar",
     navContact: "Contacto",
@@ -28,9 +29,9 @@ const translations = {
     featureServicesLabel: "Reuniones",
     featureServicesTitle: "Servicios y estudios",
     featureServicesText: "Encuentra horarios, qué esperar y cómo participar durante la semana.",
-    featureMinistriesLabel: "Comunidad",
-    featureMinistriesTitle: "Ministerios activos",
-    featureMinistriesText: "Descubre espacios para familias, jóvenes, niños y servicio local.",
+    featureSermonsLabel: "Predicaciones",
+    featureSermonsTitle: "Ver sermones en línea",
+    featureSermonsText: "Accede a transmisiones en vivo y mensajes recientes del Pastor Fredi.",
     aboutKicker: "Nuestra iglesia",
     aboutTitle: "Fe bíblica, comunidad cercana y esperanza para cada familia.",
     aboutLead:
@@ -77,6 +78,22 @@ const translations = {
     expectTwo: "Mensaje bíblico práctico y fiel a la Escritura.",
     expectThree: "Personas listas para ayudarte si visitas por primera vez.",
     expectFour: "Ambiente familiar, respetuoso y cercano.",
+    sermonsKicker: "Predicaciones",
+    sermonsTitle: "Sigue la predicación en vivo o mira mensajes recientes.",
+    sermonsLead:
+      "Cuando el Pastor Fredi predique en línea, esta página puede llevar a los visitantes directamente a la transmisión o a los mensajes grabados.",
+    liveLabel: "En vivo",
+    liveTitle: "Transmisión del servicio",
+    liveText:
+      "Agrega aquí el enlace oficial de Facebook Live, YouTube o la plataforma donde la iglesia transmite sus servicios.",
+    watchLiveButton: "Ver transmisión",
+    streamHelpButton: "Pedir enlace",
+    archiveLabel: "Mensajes recientes",
+    archiveTitle: "Archivo de predicaciones",
+    archiveText: "Espacio para enlazar el canal de YouTube, Facebook videos o una lista de sermones.",
+    scheduleStreamLabel: "Horario",
+    scheduleStreamTitle: "Domingos 10:30 AM MT",
+    scheduleStreamText: "La transmisión puede aparecer cuando el servicio esté en vivo.",
     ministriesKicker: "Vida en comunidad",
     ministriesTitle: "Ministerios para servir y crecer.",
     ministriesLead:
@@ -133,6 +150,7 @@ const translations = {
     navHome: "Home",
     navAbout: "About",
     navServices: "Services",
+    navSermons: "Sermons",
     navMinistries: "Ministries",
     navVisit: "Visit",
     navContact: "Contact",
@@ -157,9 +175,9 @@ const translations = {
     featureServicesLabel: "Gatherings",
     featureServicesTitle: "Services and studies",
     featureServicesText: "Find service times, what to expect, and how to participate during the week.",
-    featureMinistriesLabel: "Community",
-    featureMinistriesTitle: "Active ministries",
-    featureMinistriesText: "Discover spaces for families, youth, children, and local service.",
+    featureSermonsLabel: "Sermons",
+    featureSermonsTitle: "Watch sermons online",
+    featureSermonsText: "Access live streams and recent messages from Pastor Fredi.",
     aboutKicker: "Our church",
     aboutTitle: "Biblical faith, close community, and hope for every family.",
     aboutLead:
@@ -206,6 +224,22 @@ const translations = {
     expectTwo: "Practical biblical teaching faithful to Scripture.",
     expectThree: "People ready to help if you are visiting for the first time.",
     expectFour: "A family-oriented, respectful, and welcoming atmosphere.",
+    sermonsKicker: "Sermons",
+    sermonsTitle: "Follow the preaching live or watch recent messages.",
+    sermonsLead:
+      "When Pastor Fredi preaches online, this page can send visitors directly to the live stream or recorded messages.",
+    liveLabel: "Live",
+    liveTitle: "Service stream",
+    liveText:
+      "Add the official Facebook Live, YouTube, or platform link where the church streams its services.",
+    watchLiveButton: "Watch stream",
+    streamHelpButton: "Ask for link",
+    archiveLabel: "Recent messages",
+    archiveTitle: "Sermon archive",
+    archiveText: "Space to link the YouTube channel, Facebook videos, or a sermon list.",
+    scheduleStreamLabel: "Schedule",
+    scheduleStreamTitle: "Sundays 10:30 AM MT",
+    scheduleStreamText: "The stream can appear when the service is live.",
     ministriesKicker: "Community life",
     ministriesTitle: "Ministries to serve and grow.",
     ministriesLead:
@@ -260,7 +294,7 @@ const translations = {
 };
 
 const supportedLanguages = ["es", "en"];
-const routes = ["home", "about", "services", "ministries", "visit", "contact"];
+const routes = ["home", "about", "services", "sermons", "ministries", "visit", "contact"];
 const savedLanguage = localStorage.getItem("siteLanguage");
 const browserLanguage = navigator.language.toLowerCase().startsWith("en") ? "en" : "es";
 let currentLanguage = supportedLanguages.includes(savedLanguage) ? savedLanguage : browserLanguage;

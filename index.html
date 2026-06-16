@@ -30,6 +30,7 @@
         <a href="#home" data-route-link="home" data-i18n="navHome">Inicio</a>
         <a href="#about" data-route-link="about" data-i18n="navAbout">Nosotros</a>
         <a href="#services" data-route-link="services" data-i18n="navServices">Servicios</a>
+        <a href="#sermons" data-route-link="sermons" data-i18n="navSermons">Predicaciones</a>
         <a href="#ministries" data-route-link="ministries" data-i18n="navMinistries">Ministerios</a>
         <a href="#visit" data-route-link="visit" data-i18n="navVisit">Visitar</a>
         <a href="#contact" data-route-link="contact" data-i18n="navContact">Contacto</a>
@@ -98,10 +99,10 @@
               <h3 data-i18n="featureServicesTitle">Servicios y estudios</h3>
               <p data-i18n="featureServicesText">Encuentra horarios, qué esperar y cómo participar durante la semana.</p>
             </a>
-            <a class="feature-card" href="#ministries" data-route-link="ministries">
-              <span data-i18n="featureMinistriesLabel">Comunidad</span>
-              <h3 data-i18n="featureMinistriesTitle">Ministerios activos</h3>
-              <p data-i18n="featureMinistriesText">Descubre espacios para familias, jóvenes, niños y servicio local.</p>
+            <a class="feature-card" href="#sermons" data-route-link="sermons">
+              <span data-i18n="featureSermonsLabel">Predicaciones</span>
+              <h3 data-i18n="featureSermonsTitle">Ver sermones en línea</h3>
+              <p data-i18n="featureSermonsText">Accede a transmisiones en vivo y mensajes recientes del Pastor Fredi.</p>
             </a>
           </div>
         </section>
@@ -226,6 +227,45 @@
             <li data-i18n="expectThree">Personas listas para ayudarte si visitas por primera vez.</li>
             <li data-i18n="expectFour">Ambiente familiar, respetuoso y cercano.</li>
           </ul>
+        </section>
+      </section>
+
+      <section class="page-view" data-route="sermons" aria-labelledby="sermons-title">
+        <section class="page-hero sermons-hero">
+          <p class="eyebrow" data-i18n="sermonsKicker">Predicaciones</p>
+          <h1 id="sermons-title" data-i18n="sermonsTitle">Sigue la predicación en vivo o mira mensajes recientes.</h1>
+          <p data-i18n="sermonsLead">
+            Cuando el Pastor Fredi predique en línea, esta página puede llevar a los visitantes
+            directamente a la transmisión o a los mensajes grabados.
+          </p>
+        </section>
+
+        <section class="section stream-section">
+          <div class="stream-card featured">
+            <span data-i18n="liveLabel">En vivo</span>
+            <h2 data-i18n="liveTitle">Transmisión del servicio</h2>
+            <p data-i18n="liveText">
+              Agrega aquí el enlace oficial de Facebook Live, YouTube o la plataforma donde la
+              iglesia transmite sus servicios.
+            </p>
+            <div class="stream-actions">
+              <a class="button primary" href="#" aria-disabled="true" data-i18n="watchLiveButton">Ver transmisión</a>
+              <a class="button outline" href="#contact" data-route-link="contact" data-i18n="streamHelpButton">Pedir enlace</a>
+            </div>
+          </div>
+
+          <div class="stream-grid">
+            <article class="stream-card">
+              <span data-i18n="archiveLabel">Mensajes recientes</span>
+              <h3 data-i18n="archiveTitle">Archivo de predicaciones</h3>
+              <p data-i18n="archiveText">Espacio para enlazar el canal de YouTube, Facebook videos o una lista de sermones.</p>
+            </article>
+            <article class="stream-card">
+              <span data-i18n="scheduleStreamLabel">Horario</span>
+              <h3 data-i18n="scheduleStreamTitle">Domingos 10:30 AM MT</h3>
+              <p data-i18n="scheduleStreamText">La transmisión puede aparecer cuando el servicio esté en vivo.</p>
+            </article>
+          </div>
         </section>
       </section>
 
