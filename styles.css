@@ -258,7 +258,7 @@ h2 {
   background: var(--teal);
   color: var(--white);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin: -46px auto 0;
   max-width: 1120px;
   position: relative;

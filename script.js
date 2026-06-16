@@ -42,9 +42,8 @@ const translations = {
     aboutMissionTextTwo:
       "Ya sea que lleves años en la fe o estés empezando a buscar respuestas, aquí hay un lugar para escuchar, preguntar, aprender y caminar con otros.",
     leadershipKicker: "Liderazgo pastoral",
-    leadershipTitle: "Pastor Fredi Gonzalez y Victoria Pinto",
+    leadershipTitle: "Pastor Fredi Gonzalez",
     pastorLabel: "Pastor",
-    wifeLabel: "Esposa",
     pastorPhoneLabel: "Teléfono pastoral",
     valuesKicker: "Valores",
     valuesTitle: "Lo que guía nuestra vida juntos",
@@ -172,9 +171,8 @@ const translations = {
     aboutMissionTextTwo:
       "Whether you have followed Jesus for years or are just beginning to look for answers, there is room here to listen, ask, learn, and walk with others.",
     leadershipKicker: "Pastoral leadership",
-    leadershipTitle: "Pastor Fredi Gonzalez and Victoria Pinto",
+    leadershipTitle: "Pastor Fredi Gonzalez",
     pastorLabel: "Pastor",
-    wifeLabel: "Wife",
     pastorPhoneLabel: "Pastoral phone",
     valuesKicker: "Values",
     valuesTitle: "What guides our life together",
