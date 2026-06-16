@@ -48,12 +48,6 @@
     <main>
       <section class="page-view is-active" data-route="home" aria-labelledby="home-title">
         <section class="hero">
-          <img
-            class="hero-image"
-            src="assets/iglesia-del-sur.png"
-            alt="Ilustración del edificio de Iglesia Bautista Del Sur"
-          />
-          <div class="hero-overlay"></div>
           <div class="hero-content">
             <p class="eyebrow" data-i18n="heroEyebrow">Bienvenidos a casa</p>
             <h1 id="home-title" data-i18n="heroTitle">Una iglesia hispana para adorar, crecer y servir juntos.</h1>
@@ -64,6 +58,17 @@
             <div class="hero-actions">
               <a class="button primary" href="#visit" data-route-link="visit" data-i18n="heroPrimary">Planear mi visita</a>
               <a class="button secondary" href="#services" data-route-link="services" data-i18n="heroSecondary">Ver horarios</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img
+              class="hero-image"
+              src="assets/iglesia-del-sur.png"
+              alt="Ilustración del edificio de Iglesia Bautista Del Sur"
+            />
+            <div class="hero-note">
+              <span data-i18n="heroNoteLabel">Servicio dominical</span>
+              <strong data-i18n="heroNoteText">Domingos 10:30 AM MT</strong>
             </div>
           </div>
         </section>
@@ -376,12 +381,55 @@
           </form>
         </section>
       </section>
+
+      <section class="page-view" data-route="privacy" aria-labelledby="privacy-title">
+        <section class="page-hero compact">
+          <p class="eyebrow" data-i18n="privacyKicker">Privacidad</p>
+          <h1 id="privacy-title" data-i18n="privacyTitle">Política de privacidad</h1>
+          <p data-i18n="privacyLead">
+            Esta página explica cómo Iglesia Bautista Del Sur maneja la información que los
+            visitantes comparten a través del sitio web.
+          </p>
+        </section>
+
+        <section class="section policy-section">
+          <article>
+            <h2 data-i18n="privacyInfoTitle">Información que se recopila</h2>
+            <p data-i18n="privacyInfoText">
+              Si envías un formulario o haces clic para contactar a la iglesia, podemos recibir tu
+              nombre, correo, teléfono y el mensaje que decidas compartir.
+            </p>
+          </article>
+          <article>
+            <h2 data-i18n="privacyUseTitle">Cómo se utiliza</h2>
+            <p data-i18n="privacyUseText">
+              La información se usa solamente para responder preguntas, coordinar visitas, compartir
+              información de la iglesia o dar seguimiento pastoral cuando sea solicitado.
+            </p>
+          </article>
+          <article>
+            <h2 data-i18n="privacyShareTitle">Compartir información</h2>
+            <p data-i18n="privacyShareText">
+              La iglesia no vende información personal. Solo se comparte cuando sea necesario para
+              responder tu solicitud o cuando la ley lo requiera.
+            </p>
+          </article>
+        </section>
+      </section>
     </main>
 
     <footer class="site-footer">
-      <div>
-        <strong>Iglesia Bautista Del Sur</strong>
-        <p data-i18n="footerText">Compartiendo a Cristo con nuestra comunidad.</p>
+      <div class="footer-main">
+        <div>
+          <strong>Iglesia Bautista Del Sur</strong>
+          <p data-i18n="footerText">Compartiendo a Cristo con nuestra comunidad.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="#privacy" data-route-link="privacy" data-i18n="footerPrivacy">Política de privacidad</a>
+          <a href="https://www.jpwebsolutions.com/" target="_blank" rel="noopener" data-i18n="footerCredit">
+            Sitio creado por JP Web Solutions
+          </a>
+        </nav>
       </div>
       <p>&copy; <span data-year></span></p>
     </footer>

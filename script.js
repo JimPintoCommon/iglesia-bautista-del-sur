@@ -15,6 +15,8 @@ const translations = {
       "Iglesia Bautista Del Sur es una comunidad centrada en Cristo donde tu familia puede encontrar Palabra, oración, amistad y propósito.",
     heroPrimary: "Planear mi visita",
     heroSecondary: "Ver horarios",
+    heroNoteLabel: "Servicio dominical",
+    heroNoteText: "Domingos 10:30 AM MT",
     quickServiceLabel: "Servicio dominical",
     quickServiceValue: "Domingos 10:30 AM MT",
     quickStudyLabel: "Escuela bíblica",
@@ -140,6 +142,21 @@ const translations = {
     formMessage: "Mensaje",
     formButton: "Enviar mensaje",
     footerText: "Compartiendo a Cristo con nuestra comunidad.",
+    footerPrivacy: "Política de privacidad",
+    footerCredit: "Sitio creado por JP Web Solutions",
+    privacyKicker: "Privacidad",
+    privacyTitle: "Política de privacidad",
+    privacyLead:
+      "Esta página explica cómo Iglesia Bautista Del Sur maneja la información que los visitantes comparten a través del sitio web.",
+    privacyInfoTitle: "Información que se recopila",
+    privacyInfoText:
+      "Si envías un formulario o haces clic para contactar a la iglesia, podemos recibir tu nombre, correo, teléfono y el mensaje que decidas compartir.",
+    privacyUseTitle: "Cómo se utiliza",
+    privacyUseText:
+      "La información se usa solamente para responder preguntas, coordinar visitas, compartir información de la iglesia o dar seguimiento pastoral cuando sea solicitado.",
+    privacyShareTitle: "Compartir información",
+    privacyShareText:
+      "La iglesia no vende información personal. Solo se comparte cuando sea necesario para responder tu solicitud o cuando la ley lo requiera.",
     pageDescription:
       "Iglesia Bautista Del Sur: una iglesia hispana centrada en Cristo, la familia y la comunidad.",
     heroAlt: "Ilustración del edificio de Iglesia Bautista Del Sur",
@@ -161,6 +178,8 @@ const translations = {
       "Iglesia Bautista Del Sur is a Christ-centered community where your family can find Scripture, prayer, friendship, and purpose.",
     heroPrimary: "Plan my visit",
     heroSecondary: "View times",
+    heroNoteLabel: "Sunday service",
+    heroNoteText: "Sundays 10:30 AM MT",
     quickServiceLabel: "Sunday service",
     quickServiceValue: "Sundays 10:30 AM MT",
     quickStudyLabel: "Bible School",
@@ -286,6 +305,21 @@ const translations = {
     formMessage: "Message",
     formButton: "Send message",
     footerText: "Sharing Christ with our community.",
+    footerPrivacy: "Privacy Policy",
+    footerCredit: "Website by JP Web Solutions",
+    privacyKicker: "Privacy",
+    privacyTitle: "Privacy Policy",
+    privacyLead:
+      "This page explains how Iglesia Bautista Del Sur handles information visitors share through the website.",
+    privacyInfoTitle: "Information collected",
+    privacyInfoText:
+      "If you submit a form or click to contact the church, we may receive your name, email, phone number, and the message you choose to share.",
+    privacyUseTitle: "How it is used",
+    privacyUseText:
+      "Information is used only to answer questions, coordinate visits, share church information, or provide pastoral follow-up when requested.",
+    privacyShareTitle: "Sharing information",
+    privacyShareText:
+      "The church does not sell personal information. It is shared only when needed to respond to your request or when required by law.",
     pageDescription:
       "Iglesia Bautista Del Sur: a Hispanic church centered on Christ, family, and community.",
     heroAlt: "Illustration of the Iglesia Bautista Del Sur building",
@@ -294,7 +328,7 @@ const translations = {
 };
 
 const supportedLanguages = ["es", "en"];
-const routes = ["home", "about", "services", "sermons", "ministries", "visit", "contact"];
+const routes = ["home", "about", "services", "sermons", "ministries", "visit", "contact", "privacy"];
 const savedLanguage = localStorage.getItem("siteLanguage");
 const browserLanguage = navigator.language.toLowerCase().startsWith("en") ? "en" : "es";
 let currentLanguage = supportedLanguages.includes(savedLanguage) ? savedLanguage : browserLanguage;
