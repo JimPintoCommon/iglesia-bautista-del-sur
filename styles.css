@@ -753,23 +753,31 @@ h2 {
   font-size: 1.1rem;
 }
 
-.map-placeholder {
-  align-items: center;
-  background:
-    linear-gradient(135deg, rgba(29, 108, 101, 0.18), rgba(212, 161, 58, 0.16)),
-    var(--soft);
-  border: 1px dashed rgba(32, 38, 43, 0.22);
+.map-embed {
+  background: var(--white);
+  border: 1px solid var(--line);
   border-radius: 8px;
-  color: var(--muted);
-  display: flex;
-  font-weight: 800;
-  min-height: 220px;
-  padding: 26px;
+  box-shadow: 0 8px 22px rgba(32, 38, 43, 0.06);
+  overflow: hidden;
 }
 
-.map-placeholder:hover {
-  border-color: rgba(29, 108, 101, 0.42);
+.map-embed iframe {
+  border: 0;
+  display: block;
+  height: 260px;
+  width: 100%;
+}
+
+.map-embed a {
   color: var(--teal);
+  display: block;
+  font-weight: 800;
+  padding: 14px 16px;
+}
+
+.map-embed a:hover {
+  color: var(--teal);
+  text-decoration: underline;
 }
 
 .visit-actions {
