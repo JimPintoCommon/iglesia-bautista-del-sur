@@ -1,51 +1,119 @@
 const translations = {
   es: {
     brandTagline: "Una familia en Cristo",
+    navHome: "Inicio",
     navAbout: "Nosotros",
     navServices: "Servicios",
     navMinistries: "Ministerios",
+    navVisit: "Visitar",
     navContact: "Contacto",
+    headerCta: "Planear visita",
     heroEyebrow: "Bienvenidos a casa",
     heroTitle: "Una iglesia hispana para adorar, crecer y servir juntos.",
     heroText:
-      "En Iglesia Bautista Del Sur, compartimos el amor de Cristo con familias de nuestra comunidad a través de la Palabra, la oración y el servicio.",
-    heroPrimary: "Ver horarios",
-    heroSecondary: "Planear visita",
+      "Iglesia Bautista Del Sur es una comunidad centrada en Cristo donde tu familia puede encontrar Palabra, oración, amistad y propósito.",
+    heroPrimary: "Planear mi visita",
+    heroSecondary: "Ver horarios",
     quickServiceLabel: "Servicio dominical",
     quickServiceValue: "Domingos 11:00 AM",
-    quickStudyLabel: "Estudio biblico",
+    quickStudyLabel: "Estudio bíblico",
     quickStudyValue: "Miércoles 7:00 PM",
     quickLocationLabel: "Ubicación",
     quickLocationValue: "Agrega la dirección aquí",
+    homeKicker: "Lo esencial",
+    homeIntroTitle: "Un lugar para conocer a Jesús y caminar acompañado.",
+    featureAboutLabel: "Nuestra historia",
+    featureAboutTitle: "Conoce quiénes somos",
+    featureAboutText: "Lee sobre nuestra fe, nuestros valores y el corazón de la iglesia.",
+    featureServicesLabel: "Reuniones",
+    featureServicesTitle: "Servicios y estudios",
+    featureServicesText: "Encuentra horarios, qué esperar y cómo participar durante la semana.",
+    featureMinistriesLabel: "Comunidad",
+    featureMinistriesTitle: "Ministerios activos",
+    featureMinistriesText: "Descubre espacios para familias, jóvenes, niños y servicio local.",
     aboutKicker: "Nuestra iglesia",
     aboutTitle: "Fe bíblica, comunidad cercana y esperanza para cada familia.",
-    aboutText:
-      "Somos una congregación hispana que desea ayudar a cada persona a conocer a Jesús, encontrar una familia espiritual y usar sus dones para bendecir a otros.",
-    aboutTextTwo:
-      "Ya sea que lleves años en la fe o estés visitando una iglesia por primera vez, queremos recibirte con respeto, claridad y amor.",
+    aboutLead:
+      "Somos una congregación hispana que desea ayudar a cada persona a conocer a Jesús, crecer como discípulo y servir con amor a nuestra comunidad.",
+    aboutMissionKicker: "Misión",
+    aboutMissionTitle: "Compartir a Cristo de manera clara, cálida y fiel a la Biblia.",
+    aboutMissionText:
+      "Queremos que cada visita se sienta respetada y bien recibida. Nuestra iglesia existe para adorar a Dios, enseñar Su Palabra, fortalecer familias y formar creyentes que vivan su fe durante toda la semana.",
+    aboutMissionTextTwo:
+      "Ya sea que lleves años en la fe o estés empezando a buscar respuestas, aquí hay un lugar para escuchar, preguntar, aprender y caminar con otros.",
+    valuesKicker: "Valores",
+    valuesTitle: "Lo que guía nuestra vida juntos",
+    valueBibleTitle: "Palabra de Dios",
+    valueBibleText: "Predicamos y enseñamos la Biblia con claridad para la vida diaria.",
+    valueFamilyTitle: "Familia espiritual",
+    valueFamilyText: "Cuidamos relaciones sanas donde las personas pueden crecer acompañadas.",
+    valueServiceTitle: "Servicio con amor",
+    valueServiceText: "Servimos a la iglesia y a nuestros vecinos con humildad y compasión.",
+    valueWelcomeTitle: "Bienvenida sincera",
+    valueWelcomeText: "Recibimos a cada persona con respeto, paciencia y hospitalidad.",
     servicesKicker: "Reuniones",
-    servicesTitle: "Horarios de servicios",
+    servicesTitle: "Horarios y oportunidades para reunirse.",
+    servicesLead:
+      "Los servicios son en español, con una bienvenida clara para visitantes y familias que están conociendo la iglesia por primera vez.",
     worshipDay: "Domingo",
     worshipTitle: "Culto de adoración",
     worshipTime: "11:00 AM",
+    worshipDesc: "Predicación bíblica, oración, alabanza y comunión como iglesia.",
     studyDay: "Miércoles",
     studyTitle: "Estudio bíblico y oración",
     studyTime: "7:00 PM",
+    studyDesc: "Un tiempo más cercano para aprender, hacer preguntas y orar juntos.",
     familyDay: "Mensual",
     familyTitle: "Actividades familiares",
     familyTime: "Fechas por anunciar",
+    familyDesc: "Convivios, oportunidades de servicio y actividades para fortalecer relaciones.",
+    expectKicker: "Qué esperar",
+    expectTitle: "Un servicio reverente, sencillo y centrado en Cristo.",
+    expectOne: "Música congregacional y oración.",
+    expectTwo: "Mensaje bíblico práctico y fiel a la Escritura.",
+    expectThree: "Personas listas para ayudarte si visitas por primera vez.",
+    expectFour: "Ambiente familiar, respetuoso y cercano.",
     ministriesKicker: "Vida en comunidad",
-    ministriesTitle: "Ministerios para servir y crecer",
-    ministryFamiliesTitle: "Familias",
-    ministryFamiliesText: "Apoyo espiritual y amistad para padres, matrimonios y hogares.",
-    ministryYouthTitle: "Jóvenes",
-    ministryYouthText: "Espacios para crecer en la fe, hacer preguntas y formar amistades sanas.",
-    ministryServiceTitle: "Servicio",
-    ministryServiceText: "Oportunidades para bendecir a la iglesia y a la comunidad local.",
-    contactKicker: "Visítanos",
+    ministriesTitle: "Ministerios para servir y crecer.",
+    ministriesLead:
+      "La iglesia no es solo un lugar para asistir; es una familia donde cada persona puede crecer, servir y usar sus dones.",
+    ministryFamiliesLabel: "Familias",
+    ministryFamiliesTitle: "Apoyo para hogares y matrimonios",
+    ministryFamiliesText: "Espacios de amistad, oración y enseñanza para ayudar a las familias a caminar con Cristo.",
+    ministryYouthLabel: "Jóvenes",
+    ministryYouthTitle: "Fe con preguntas honestas",
+    ministryYouthText: "Un ambiente sano para aprender la Biblia, formar amistades y crecer con propósito.",
+    ministryChildrenLabel: "Niños",
+    ministryChildrenTitle: "Cuidado y enseñanza con amor",
+    ministryChildrenText: "Lecciones apropiadas para su edad, seguridad y una bienvenida cariñosa para los más pequeños.",
+    ministryServiceLabel: "Servicio",
+    ministryServiceTitle: "Manos listas para bendecir",
+    ministryServiceText: "Oportunidades para servir en hospitalidad, oración, apoyo práctico y alcance local.",
+    visitKicker: "Primera visita",
+    visitTitle: "Queremos que tu primera visita sea sencilla.",
+    visitLead:
+      "Si vienes por primera vez, no tienes que saber todo de antemano. Te esperamos con una sonrisa y con personas listas para orientarte.",
+    visitChecklistTitle: "Antes de venir",
+    visitOne: "Llega unos minutos antes para encontrar asiento con calma.",
+    visitTwo: "Puedes venir con ropa cómoda y respetuosa.",
+    visitThree: "Si tienes niños, alguien puede ayudarte a encontrar el área adecuada.",
+    visitFour: "Si prefieres hablar con alguien primero, mándanos un mensaje.",
+    visitServiceLabel: "Próximo servicio",
+    visitServiceTitle: "Domingo a las 11:00 AM",
+    visitServiceText:
+      "Agrega aquí la dirección completa, instrucciones de estacionamiento y cualquier detalle importante para visitantes.",
+    visitButton: "Hacer una pregunta",
+    contactKicker: "Contacto",
     contactTitle: "Nos encantaría conocerte.",
-    contactText:
-      "Si tienes preguntas sobre horarios, ubicación o cómo planear tu primera visita, mándanos un mensaje y con gusto te ayudamos.",
+    contactLead:
+      "Usa esta página para agregar la información real de la iglesia: dirección, teléfono, correo, redes sociales y un formulario conectado.",
+    contactAddressLabel: "Dirección",
+    contactAddressValue: "Agrega la dirección aquí",
+    contactPhoneLabel: "Teléfono",
+    contactPhoneValue: "Agrega el teléfono aquí",
+    contactEmailLabel: "Correo",
+    contactEmailValue: "Agrega el correo aquí",
+    mapPlaceholder: "Mapa o ubicación de Google aquí",
     formName: "Nombre",
     formEmail: "Correo electrónico",
     formMessage: "Mensaje",
@@ -54,54 +122,123 @@ const translations = {
     pageDescription:
       "Iglesia Bautista Del Sur: una iglesia hispana centrada en Cristo, la familia y la comunidad.",
     heroAlt: "Congregación reunida afuera de la iglesia",
+    formAlert: "Gracias. En el sitio final, este formulario se conectará al correo de la iglesia.",
   },
   en: {
     brandTagline: "A family in Christ",
+    navHome: "Home",
     navAbout: "About",
     navServices: "Services",
     navMinistries: "Ministries",
+    navVisit: "Visit",
     navContact: "Contact",
+    headerCta: "Plan a visit",
     heroEyebrow: "Welcome home",
     heroTitle: "A Hispanic church where families worship, grow, and serve together.",
     heroText:
-      "At Iglesia Bautista Del Sur, we share the love of Christ with families in our community through Scripture, prayer, and service.",
-    heroPrimary: "View times",
-    heroSecondary: "Plan a visit",
+      "Iglesia Bautista Del Sur is a Christ-centered community where your family can find Scripture, prayer, friendship, and purpose.",
+    heroPrimary: "Plan my visit",
+    heroSecondary: "View times",
     quickServiceLabel: "Sunday service",
     quickServiceValue: "Sundays 11:00 AM",
     quickStudyLabel: "Bible study",
     quickStudyValue: "Wednesdays 7:00 PM",
     quickLocationLabel: "Location",
     quickLocationValue: "Add the address here",
+    homeKicker: "Essentials",
+    homeIntroTitle: "A place to know Jesus and walk with others.",
+    featureAboutLabel: "Our story",
+    featureAboutTitle: "Learn who we are",
+    featureAboutText: "Read about our faith, values, and the heart of the church.",
+    featureServicesLabel: "Gatherings",
+    featureServicesTitle: "Services and studies",
+    featureServicesText: "Find service times, what to expect, and how to participate during the week.",
+    featureMinistriesLabel: "Community",
+    featureMinistriesTitle: "Active ministries",
+    featureMinistriesText: "Discover spaces for families, youth, children, and local service.",
     aboutKicker: "Our church",
     aboutTitle: "Biblical faith, close community, and hope for every family.",
-    aboutText:
-      "We are a Hispanic congregation that wants to help every person know Jesus, find a spiritual family, and use their gifts to bless others.",
-    aboutTextTwo:
-      "Whether you have followed Jesus for years or are visiting church for the first time, we want to welcome you with respect, clarity, and love.",
+    aboutLead:
+      "We are a Hispanic congregation that wants to help every person know Jesus, grow as a disciple, and serve our community with love.",
+    aboutMissionKicker: "Mission",
+    aboutMissionTitle: "Sharing Christ clearly, warmly, and faithfully to Scripture.",
+    aboutMissionText:
+      "We want every visit to feel respected and welcomed. Our church exists to worship God, teach His Word, strengthen families, and form believers who live their faith all week long.",
+    aboutMissionTextTwo:
+      "Whether you have followed Jesus for years or are just beginning to look for answers, there is room here to listen, ask, learn, and walk with others.",
+    valuesKicker: "Values",
+    valuesTitle: "What guides our life together",
+    valueBibleTitle: "God's Word",
+    valueBibleText: "We preach and teach the Bible clearly for everyday life.",
+    valueFamilyTitle: "Spiritual family",
+    valueFamilyText: "We nurture healthy relationships where people can grow together.",
+    valueServiceTitle: "Loving service",
+    valueServiceText: "We serve the church and our neighbors with humility and compassion.",
+    valueWelcomeTitle: "Sincere welcome",
+    valueWelcomeText: "We receive each person with respect, patience, and hospitality.",
     servicesKicker: "Gatherings",
-    servicesTitle: "Service times",
+    servicesTitle: "Times and opportunities to gather.",
+    servicesLead:
+      "Services are in Spanish, with a clear welcome for visitors and families getting to know the church for the first time.",
     worshipDay: "Sunday",
     worshipTitle: "Worship service",
     worshipTime: "11:00 AM",
+    worshipDesc: "Biblical preaching, prayer, worship, and fellowship as a church.",
     studyDay: "Wednesday",
     studyTitle: "Bible study and prayer",
     studyTime: "7:00 PM",
+    studyDesc: "A closer setting to learn, ask questions, and pray together.",
     familyDay: "Monthly",
     familyTitle: "Family activities",
     familyTime: "Dates to be announced",
+    familyDesc: "Fellowship, service opportunities, and activities that strengthen relationships.",
+    expectKicker: "What to expect",
+    expectTitle: "A reverent, simple service centered on Christ.",
+    expectOne: "Congregational music and prayer.",
+    expectTwo: "Practical biblical teaching faithful to Scripture.",
+    expectThree: "People ready to help if you are visiting for the first time.",
+    expectFour: "A family-oriented, respectful, and welcoming atmosphere.",
     ministriesKicker: "Community life",
-    ministriesTitle: "Ministries to serve and grow",
-    ministryFamiliesTitle: "Families",
-    ministryFamiliesText: "Spiritual support and friendship for parents, marriages, and homes.",
-    ministryYouthTitle: "Youth",
-    ministryYouthText: "A place to grow in faith, ask questions, and build healthy friendships.",
-    ministryServiceTitle: "Service",
-    ministryServiceText: "Opportunities to bless the church and the local community.",
-    contactKicker: "Visit us",
+    ministriesTitle: "Ministries to serve and grow.",
+    ministriesLead:
+      "Church is not just a place to attend; it is a family where each person can grow, serve, and use their gifts.",
+    ministryFamiliesLabel: "Families",
+    ministryFamiliesTitle: "Support for homes and marriages",
+    ministryFamiliesText: "Spaces for friendship, prayer, and teaching to help families walk with Christ.",
+    ministryYouthLabel: "Youth",
+    ministryYouthTitle: "Faith with honest questions",
+    ministryYouthText: "A healthy environment to learn the Bible, build friendships, and grow with purpose.",
+    ministryChildrenLabel: "Children",
+    ministryChildrenTitle: "Care and teaching with love",
+    ministryChildrenText: "Age-appropriate lessons, safety, and a warm welcome for the youngest children.",
+    ministryServiceLabel: "Service",
+    ministryServiceTitle: "Hands ready to bless",
+    ministryServiceText: "Opportunities to serve in hospitality, prayer, practical support, and local outreach.",
+    visitKicker: "First visit",
+    visitTitle: "We want your first visit to be simple.",
+    visitLead:
+      "If you are coming for the first time, you do not have to know everything ahead of time. We will welcome you with a smile and people ready to guide you.",
+    visitChecklistTitle: "Before you come",
+    visitOne: "Arrive a few minutes early so you can find a seat calmly.",
+    visitTwo: "You can come in comfortable and respectful clothing.",
+    visitThree: "If you have children, someone can help you find the right area.",
+    visitFour: "If you would rather talk with someone first, send us a message.",
+    visitServiceLabel: "Next service",
+    visitServiceTitle: "Sunday at 11:00 AM",
+    visitServiceText:
+      "Add the full address, parking instructions, and any important details for visitors here.",
+    visitButton: "Ask a question",
+    contactKicker: "Contact",
     contactTitle: "We would love to meet you.",
-    contactText:
-      "If you have questions about service times, location, or planning your first visit, send us a message and we will be glad to help.",
+    contactLead:
+      "Use this page to add the church's real information: address, phone, email, social media, and a connected form.",
+    contactAddressLabel: "Address",
+    contactAddressValue: "Add the address here",
+    contactPhoneLabel: "Phone",
+    contactPhoneValue: "Add the phone here",
+    contactEmailLabel: "Email",
+    contactEmailValue: "Add the email here",
+    mapPlaceholder: "Google map or location here",
     formName: "Name",
     formEmail: "Email",
     formMessage: "Message",
@@ -110,13 +247,34 @@ const translations = {
     pageDescription:
       "Iglesia Bautista Del Sur: a Hispanic church centered on Christ, family, and community.",
     heroAlt: "Congregation gathered outside the church",
+    formAlert: "Thank you. In the final site, this form will connect to the church email.",
   },
 };
 
 const supportedLanguages = ["es", "en"];
+const routes = ["home", "about", "services", "ministries", "visit", "contact"];
 const savedLanguage = localStorage.getItem("siteLanguage");
 const browserLanguage = navigator.language.toLowerCase().startsWith("en") ? "en" : "es";
 let currentLanguage = supportedLanguages.includes(savedLanguage) ? savedLanguage : browserLanguage;
+
+function getRouteFromHash() {
+  const route = window.location.hash.replace("#", "");
+  return routes.includes(route) ? route : "home";
+}
+
+function setActiveRoute(route) {
+  const safeRoute = routes.includes(route) ? route : "home";
+
+  document.querySelectorAll("[data-route]").forEach((view) => {
+    view.classList.toggle("is-active", view.dataset.route === safeRoute);
+  });
+
+  document.querySelectorAll("[data-route-link]").forEach((link) => {
+    link.classList.toggle("is-active", link.dataset.routeLink === safeRoute);
+  });
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
 function applyLanguage(language) {
   currentLanguage = supportedLanguages.includes(language) ? language : "es";
@@ -146,14 +304,21 @@ document.querySelectorAll("[data-lang-button]").forEach((button) => {
   });
 });
 
+document.querySelectorAll("[data-route-link]").forEach((link) => {
+  link.addEventListener("click", () => {
+    setActiveRoute(link.dataset.routeLink);
+  });
+});
+
+window.addEventListener("hashchange", () => {
+  setActiveRoute(getRouteFromHash());
+});
+
 document.querySelector(".contact-form").addEventListener("submit", (event) => {
   event.preventDefault();
-  const message =
-    currentLanguage === "es"
-      ? "Gracias. En el sitio final, este formulario se conectará al correo de la iglesia."
-      : "Thank you. In the final site, this form will connect to the church email.";
-  alert(message);
+  alert(translations[currentLanguage].formAlert);
 });
 
 document.querySelector("[data-year]").textContent = new Date().getFullYear();
 applyLanguage(currentLanguage);
+setActiveRoute(getRouteFromHash());

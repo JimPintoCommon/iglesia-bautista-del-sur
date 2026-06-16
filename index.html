@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header" data-header>
-      <a class="brand" href="#inicio" aria-label="Iglesia Bautista Del Sur">
+    <header class="site-header">
+      <a class="brand" href="#home" data-route-link="home" aria-label="Iglesia Bautista Del Sur">
         <span class="brand-mark">IB</span>
         <span>
           <strong>Iglesia Bautista Del Sur</strong>
@@ -27,147 +27,306 @@
       </a>
 
       <nav class="main-nav" aria-label="Principal">
-        <a href="#nosotros" data-i18n="navAbout">Nosotros</a>
-        <a href="#servicios" data-i18n="navServices">Servicios</a>
-        <a href="#ministerios" data-i18n="navMinistries">Ministerios</a>
-        <a href="#contacto" data-i18n="navContact">Contacto</a>
+        <a href="#home" data-route-link="home" data-i18n="navHome">Inicio</a>
+        <a href="#about" data-route-link="about" data-i18n="navAbout">Nosotros</a>
+        <a href="#services" data-route-link="services" data-i18n="navServices">Servicios</a>
+        <a href="#ministries" data-route-link="ministries" data-i18n="navMinistries">Ministerios</a>
+        <a href="#visit" data-route-link="visit" data-i18n="navVisit">Visitar</a>
+        <a href="#contact" data-route-link="contact" data-i18n="navContact">Contacto</a>
       </nav>
 
-      <div class="language-switcher" aria-label="Language selector">
-        <button type="button" data-lang-button="es" aria-pressed="true">ES</button>
-        <button type="button" data-lang-button="en" aria-pressed="false">EN</button>
+      <div class="header-actions">
+        <div class="language-switcher" aria-label="Language selector">
+          <button type="button" data-lang-button="es" aria-pressed="true">ES</button>
+          <button type="button" data-lang-button="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="header-cta" href="#visit" data-route-link="visit" data-i18n="headerCta">Planear visita</a>
       </div>
     </header>
 
-    <main id="inicio">
-      <section class="hero">
-        <img
-          class="hero-image"
-          src="assets/church-hero.png"
-          alt="Congregacion reunida afuera de la iglesia"
-        />
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="eyebrow" data-i18n="heroEyebrow">Bienvenidos a casa</p>
-          <h1 data-i18n="heroTitle">Una iglesia hispana para adorar, crecer y servir juntos.</h1>
-          <p data-i18n="heroText">
-            En Iglesia Bautista Del Sur, compartimos el amor de Cristo con familias de nuestra
-            comunidad a través de la Palabra, la oración y el servicio.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#servicios" data-i18n="heroPrimary">Ver horarios</a>
-            <a class="button secondary" href="#contacto" data-i18n="heroSecondary">Planear visita</a>
+    <main>
+      <section class="page-view is-active" data-route="home" aria-labelledby="home-title">
+        <section class="hero">
+          <img
+            class="hero-image"
+            src="assets/church-hero.png"
+            alt="Congregación reunida afuera de la iglesia"
+          />
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p class="eyebrow" data-i18n="heroEyebrow">Bienvenidos a casa</p>
+            <h1 id="home-title" data-i18n="heroTitle">Una iglesia hispana para adorar, crecer y servir juntos.</h1>
+            <p data-i18n="heroText">
+              Iglesia Bautista Del Sur es una comunidad centrada en Cristo donde tu familia puede
+              encontrar Palabra, oración, amistad y propósito.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#visit" data-route-link="visit" data-i18n="heroPrimary">Planear mi visita</a>
+              <a class="button secondary" href="#services" data-route-link="services" data-i18n="heroSecondary">Ver horarios</a>
+            </div>
           </div>
-        </div>
+        </section>
+
+        <section class="quick-info" aria-label="Información principal">
+          <article>
+            <span data-i18n="quickServiceLabel">Servicio dominical</span>
+            <strong data-i18n="quickServiceValue">Domingos 11:00 AM</strong>
+          </article>
+          <article>
+            <span data-i18n="quickStudyLabel">Estudio bíblico</span>
+            <strong data-i18n="quickStudyValue">Miércoles 7:00 PM</strong>
+          </article>
+          <article>
+            <span data-i18n="quickLocationLabel">Ubicación</span>
+            <strong data-i18n="quickLocationValue">Agrega la dirección aquí</strong>
+          </article>
+        </section>
+
+        <section class="section intro-section">
+          <div class="section-heading left">
+            <p class="section-kicker" data-i18n="homeKicker">Lo esencial</p>
+            <h2 data-i18n="homeIntroTitle">Un lugar para conocer a Jesús y caminar acompañado.</h2>
+          </div>
+          <div class="feature-grid">
+            <a class="feature-card" href="#about" data-route-link="about">
+              <span data-i18n="featureAboutLabel">Nuestra historia</span>
+              <h3 data-i18n="featureAboutTitle">Conoce quiénes somos</h3>
+              <p data-i18n="featureAboutText">Lee sobre nuestra fe, nuestros valores y el corazón de la iglesia.</p>
+            </a>
+            <a class="feature-card" href="#services" data-route-link="services">
+              <span data-i18n="featureServicesLabel">Reuniones</span>
+              <h3 data-i18n="featureServicesTitle">Servicios y estudios</h3>
+              <p data-i18n="featureServicesText">Encuentra horarios, qué esperar y cómo participar durante la semana.</p>
+            </a>
+            <a class="feature-card" href="#ministries" data-route-link="ministries">
+              <span data-i18n="featureMinistriesLabel">Comunidad</span>
+              <h3 data-i18n="featureMinistriesTitle">Ministerios activos</h3>
+              <p data-i18n="featureMinistriesText">Descubre espacios para familias, jóvenes, niños y servicio local.</p>
+            </a>
+          </div>
+        </section>
       </section>
 
-      <section class="quick-info" aria-label="Informacion principal">
-        <article>
-          <span data-i18n="quickServiceLabel">Servicio dominical</span>
-          <strong data-i18n="quickServiceValue">Domingos 11:00 AM</strong>
-        </article>
-        <article>
-          <span data-i18n="quickStudyLabel">Estudio bíblico</span>
-          <strong data-i18n="quickStudyValue">Miércoles 7:00 PM</strong>
-        </article>
-        <article>
-          <span data-i18n="quickLocationLabel">Ubicación</span>
-          <strong data-i18n="quickLocationValue">Agrega la dirección aquí</strong>
-        </article>
-      </section>
-
-      <section class="section split" id="nosotros">
-        <div>
-          <p class="section-kicker" data-i18n="aboutKicker">Nuestra iglesia</p>
-          <h2 data-i18n="aboutTitle">Fe bíblica, comunidad cercana y esperanza para cada familia.</h2>
-        </div>
-        <div class="section-copy">
-          <p data-i18n="aboutText">
+      <section class="page-view" data-route="about" aria-labelledby="about-title">
+        <section class="page-hero compact">
+          <p class="eyebrow" data-i18n="aboutKicker">Nuestra iglesia</p>
+          <h1 id="about-title" data-i18n="aboutTitle">Fe bíblica, comunidad cercana y esperanza para cada familia.</h1>
+          <p data-i18n="aboutLead">
             Somos una congregación hispana que desea ayudar a cada persona a conocer a Jesús,
-            encontrar una familia espiritual y usar sus dones para bendecir a otros.
+            crecer como discípulo y servir con amor a nuestra comunidad.
           </p>
-          <p data-i18n="aboutTextTwo">
-            Ya sea que lleves años en la fe o estés visitando una iglesia por primera vez,
-            queremos recibirte con respeto, claridad y amor.
-          </p>
-        </div>
+        </section>
+
+        <section class="section split">
+          <div>
+            <p class="section-kicker" data-i18n="aboutMissionKicker">Misión</p>
+            <h2 data-i18n="aboutMissionTitle">Compartir a Cristo de manera clara, cálida y fiel a la Biblia.</h2>
+          </div>
+          <div class="section-copy">
+            <p data-i18n="aboutMissionText">
+              Queremos que cada visita se sienta respetada y bien recibida. Nuestra iglesia existe
+              para adorar a Dios, enseñar Su Palabra, fortalecer familias y formar creyentes que
+              vivan su fe durante toda la semana.
+            </p>
+            <p data-i18n="aboutMissionTextTwo">
+              Ya sea que lleves años en la fe o estés empezando a buscar respuestas, aquí hay un
+              lugar para escuchar, preguntar, aprender y caminar con otros.
+            </p>
+          </div>
+        </section>
+
+        <section class="section values-section">
+          <div class="section-heading">
+            <p class="section-kicker" data-i18n="valuesKicker">Valores</p>
+            <h2 data-i18n="valuesTitle">Lo que guía nuestra vida juntos</h2>
+          </div>
+          <div class="value-grid">
+            <article>
+              <span>01</span>
+              <h3 data-i18n="valueBibleTitle">Palabra de Dios</h3>
+              <p data-i18n="valueBibleText">Predicamos y enseñamos la Biblia con claridad para la vida diaria.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3 data-i18n="valueFamilyTitle">Familia espiritual</h3>
+              <p data-i18n="valueFamilyText">Cuidamos relaciones sanas donde las personas pueden crecer acompañadas.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3 data-i18n="valueServiceTitle">Servicio con amor</h3>
+              <p data-i18n="valueServiceText">Servimos a la iglesia y a nuestros vecinos con humildad y compasión.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3 data-i18n="valueWelcomeTitle">Bienvenida sincera</h3>
+              <p data-i18n="valueWelcomeText">Recibimos a cada persona con respeto, paciencia y hospitalidad.</p>
+            </article>
+          </div>
+        </section>
       </section>
 
-      <section class="section schedule-section" id="servicios">
-        <div class="section-heading">
-          <p class="section-kicker" data-i18n="servicesKicker">Reuniones</p>
-          <h2 data-i18n="servicesTitle">Horarios de servicios</h2>
-        </div>
-        <div class="schedule-grid">
-          <article class="schedule-card">
-            <span data-i18n="worshipDay">Domingo</span>
-            <h3 data-i18n="worshipTitle">Culto de adoración</h3>
-            <p data-i18n="worshipTime">11:00 AM</p>
-          </article>
-          <article class="schedule-card">
-            <span data-i18n="studyDay">Miércoles</span>
-            <h3 data-i18n="studyTitle">Estudio bíblico y oración</h3>
-            <p data-i18n="studyTime">7:00 PM</p>
-          </article>
-          <article class="schedule-card">
-            <span data-i18n="familyDay">Mensual</span>
-            <h3 data-i18n="familyTitle">Actividades familiares</h3>
-            <p data-i18n="familyTime">Fechas por anunciar</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section ministries-section" id="ministerios">
-        <div class="section-heading">
-          <p class="section-kicker" data-i18n="ministriesKicker">Vida en comunidad</p>
-          <h2 data-i18n="ministriesTitle">Ministerios para servir y crecer</h2>
-        </div>
-        <div class="ministry-grid">
-          <article>
-            <h3 data-i18n="ministryFamiliesTitle">Familias</h3>
-            <p data-i18n="ministryFamiliesText">Apoyo espiritual y amistad para padres, matrimonios y hogares.</p>
-          </article>
-          <article>
-            <h3 data-i18n="ministryYouthTitle">Jóvenes</h3>
-            <p data-i18n="ministryYouthText">Espacios para crecer en la fe, hacer preguntas y formar amistades sanas.</p>
-          </article>
-          <article>
-            <h3 data-i18n="ministryServiceTitle">Servicio</h3>
-            <p data-i18n="ministryServiceText">Oportunidades para bendecir a la iglesia y a la comunidad local.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section contact-section" id="contacto">
-        <div>
-          <p class="section-kicker" data-i18n="contactKicker">Visítanos</p>
-          <h2 data-i18n="contactTitle">Nos encantaría conocerte.</h2>
-          <p data-i18n="contactText">
-            Si tienes preguntas sobre horarios, ubicación o cómo planear tu primera visita,
-            mándanos un mensaje y con gusto te ayudamos.
+      <section class="page-view" data-route="services" aria-labelledby="services-title">
+        <section class="page-hero">
+          <p class="eyebrow" data-i18n="servicesKicker">Reuniones</p>
+          <h1 id="services-title" data-i18n="servicesTitle">Horarios y oportunidades para reunirse.</h1>
+          <p data-i18n="servicesLead">
+            Los servicios son en español, con una bienvenida clara para visitantes y familias que
+            están conociendo la iglesia por primera vez.
           </p>
-        </div>
-        <form class="contact-form">
-          <label>
-            <span data-i18n="formName">Nombre</span>
-            <input type="text" name="name" autocomplete="name" />
-          </label>
-          <label>
-            <span data-i18n="formEmail">Correo electrónico</span>
-            <input type="email" name="email" autocomplete="email" />
-          </label>
-          <label>
-            <span data-i18n="formMessage">Mensaje</span>
-            <textarea name="message" rows="4"></textarea>
-          </label>
-          <button type="submit" data-i18n="formButton">Enviar mensaje</button>
-        </form>
+        </section>
+
+        <section class="section schedule-section">
+          <div class="schedule-grid detailed">
+            <article class="schedule-card">
+              <span data-i18n="worshipDay">Domingo</span>
+              <h3 data-i18n="worshipTitle">Culto de adoración</h3>
+              <p data-i18n="worshipTime">11:00 AM</p>
+              <small data-i18n="worshipDesc">Predicación bíblica, oración, alabanza y comunión como iglesia.</small>
+            </article>
+            <article class="schedule-card">
+              <span data-i18n="studyDay">Miércoles</span>
+              <h3 data-i18n="studyTitle">Estudio bíblico y oración</h3>
+              <p data-i18n="studyTime">7:00 PM</p>
+              <small data-i18n="studyDesc">Un tiempo más cercano para aprender, hacer preguntas y orar juntos.</small>
+            </article>
+            <article class="schedule-card">
+              <span data-i18n="familyDay">Mensual</span>
+              <h3 data-i18n="familyTitle">Actividades familiares</h3>
+              <p data-i18n="familyTime">Fechas por anunciar</p>
+              <small data-i18n="familyDesc">Convivios, oportunidades de servicio y actividades para fortalecer relaciones.</small>
+            </article>
+          </div>
+        </section>
+
+        <section class="section two-column-band">
+          <div>
+            <p class="section-kicker" data-i18n="expectKicker">Qué esperar</p>
+            <h2 data-i18n="expectTitle">Un servicio reverente, sencillo y centrado en Cristo.</h2>
+          </div>
+          <ul class="check-list">
+            <li data-i18n="expectOne">Música congregacional y oración.</li>
+            <li data-i18n="expectTwo">Mensaje bíblico práctico y fiel a la Escritura.</li>
+            <li data-i18n="expectThree">Personas listas para ayudarte si visitas por primera vez.</li>
+            <li data-i18n="expectFour">Ambiente familiar, respetuoso y cercano.</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="page-view" data-route="ministries" aria-labelledby="ministries-title">
+        <section class="page-hero">
+          <p class="eyebrow" data-i18n="ministriesKicker">Vida en comunidad</p>
+          <h1 id="ministries-title" data-i18n="ministriesTitle">Ministerios para servir y crecer.</h1>
+          <p data-i18n="ministriesLead">
+            La iglesia no es solo un lugar para asistir; es una familia donde cada persona puede
+            crecer, servir y usar sus dones.
+          </p>
+        </section>
+
+        <section class="section ministry-list">
+          <article>
+            <span data-i18n="ministryFamiliesLabel">Familias</span>
+            <h2 data-i18n="ministryFamiliesTitle">Apoyo para hogares y matrimonios</h2>
+            <p data-i18n="ministryFamiliesText">Espacios de amistad, oración y enseñanza para ayudar a las familias a caminar con Cristo.</p>
+          </article>
+          <article>
+            <span data-i18n="ministryYouthLabel">Jóvenes</span>
+            <h2 data-i18n="ministryYouthTitle">Fe con preguntas honestas</h2>
+            <p data-i18n="ministryYouthText">Un ambiente sano para aprender la Biblia, formar amistades y crecer con propósito.</p>
+          </article>
+          <article>
+            <span data-i18n="ministryChildrenLabel">Niños</span>
+            <h2 data-i18n="ministryChildrenTitle">Cuidado y enseñanza con amor</h2>
+            <p data-i18n="ministryChildrenText">Lecciones apropiadas para su edad, seguridad y una bienvenida cariñosa para los más pequeños.</p>
+          </article>
+          <article>
+            <span data-i18n="ministryServiceLabel">Servicio</span>
+            <h2 data-i18n="ministryServiceTitle">Manos listas para bendecir</h2>
+            <p data-i18n="ministryServiceText">Oportunidades para servir en hospitalidad, oración, apoyo práctico y alcance local.</p>
+          </article>
+        </section>
+      </section>
+
+      <section class="page-view" data-route="visit" aria-labelledby="visit-title">
+        <section class="page-hero visit-hero">
+          <p class="eyebrow" data-i18n="visitKicker">Primera visita</p>
+          <h1 id="visit-title" data-i18n="visitTitle">Queremos que tu primera visita sea sencilla.</h1>
+          <p data-i18n="visitLead">
+            Si vienes por primera vez, no tienes que saber todo de antemano. Te esperamos con una
+            sonrisa y con personas listas para orientarte.
+          </p>
+        </section>
+
+        <section class="section visit-layout">
+          <div class="visit-card">
+            <h2 data-i18n="visitChecklistTitle">Antes de venir</h2>
+            <ul class="check-list">
+              <li data-i18n="visitOne">Llega unos minutos antes para encontrar asiento con calma.</li>
+              <li data-i18n="visitTwo">Puedes venir con ropa cómoda y respetuosa.</li>
+              <li data-i18n="visitThree">Si tienes niños, alguien puede ayudarte a encontrar el área adecuada.</li>
+              <li data-i18n="visitFour">Si prefieres hablar con alguien primero, mándanos un mensaje.</li>
+            </ul>
+          </div>
+          <div class="visit-card highlighted">
+            <span data-i18n="visitServiceLabel">Próximo servicio</span>
+            <h2 data-i18n="visitServiceTitle">Domingo a las 11:00 AM</h2>
+            <p data-i18n="visitServiceText">Agrega aquí la dirección completa, instrucciones de estacionamiento y cualquier detalle importante para visitantes.</p>
+            <a class="button primary" href="#contact" data-route-link="contact" data-i18n="visitButton">Hacer una pregunta</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="page-view" data-route="contact" aria-labelledby="contact-title">
+        <section class="page-hero compact">
+          <p class="eyebrow" data-i18n="contactKicker">Contacto</p>
+          <h1 id="contact-title" data-i18n="contactTitle">Nos encantaría conocerte.</h1>
+          <p data-i18n="contactLead">
+            Usa esta página para agregar la información real de la iglesia: dirección, teléfono,
+            correo, redes sociales y un formulario conectado.
+          </p>
+        </section>
+
+        <section class="section contact-section">
+          <div class="contact-details">
+            <article>
+              <span data-i18n="contactAddressLabel">Dirección</span>
+              <strong data-i18n="contactAddressValue">Agrega la dirección aquí</strong>
+            </article>
+            <article>
+              <span data-i18n="contactPhoneLabel">Teléfono</span>
+              <strong data-i18n="contactPhoneValue">Agrega el teléfono aquí</strong>
+            </article>
+            <article>
+              <span data-i18n="contactEmailLabel">Correo</span>
+              <strong data-i18n="contactEmailValue">Agrega el correo aquí</strong>
+            </article>
+            <div class="map-placeholder" data-i18n="mapPlaceholder">Mapa o ubicación de Google aquí</div>
+          </div>
+
+          <form class="contact-form">
+            <label>
+              <span data-i18n="formName">Nombre</span>
+              <input type="text" name="name" autocomplete="name" />
+            </label>
+            <label>
+              <span data-i18n="formEmail">Correo electrónico</span>
+              <input type="email" name="email" autocomplete="email" />
+            </label>
+            <label>
+              <span data-i18n="formMessage">Mensaje</span>
+              <textarea name="message" rows="5"></textarea>
+            </label>
+            <button type="submit" data-i18n="formButton">Enviar mensaje</button>
+          </form>
+        </section>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span data-year></span> Iglesia Bautista Del Sur</p>
-      <p data-i18n="footerText">Compartiendo a Cristo con nuestra comunidad.</p>
+      <div>
+        <strong>Iglesia Bautista Del Sur</strong>
+        <p data-i18n="footerText">Compartiendo a Cristo con nuestra comunidad.</p>
+      </div>
+      <p>&copy; <span data-year></span></p>
     </footer>
 
     <script type="module" src="script.js"></script>
