@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Iglesia Bautista Del Sur: una iglesia hispana centrada en Cristo, la familia y la comunidad."
+    />
+    <title>Iglesia Bautista Del Sur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Iglesia Bautista Del Sur">
+        <span class="brand-mark">IB</span>
+        <span>
+          <strong>Iglesia Bautista Del Sur</strong>
+          <small data-i18n="brandTagline">Una familia en Cristo</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Principal">
+        <a href="#nosotros" data-i18n="navAbout">Nosotros</a>
+        <a href="#servicios" data-i18n="navServices">Servicios</a>
+        <a href="#ministerios" data-i18n="navMinistries">Ministerios</a>
+        <a href="#contacto" data-i18n="navContact">Contacto</a>
+      </nav>
+
+      <div class="language-switcher" aria-label="Language selector">
+        <button type="button" data-lang-button="es" aria-pressed="true">ES</button>
+        <button type="button" data-lang-button="en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <img
+          class="hero-image"
+          src="assets/church-hero.png"
+          alt="Congregacion reunida afuera de la iglesia"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="heroEyebrow">Bienvenidos a casa</p>
+          <h1 data-i18n="heroTitle">Una iglesia hispana para adorar, crecer y servir juntos.</h1>
+          <p data-i18n="heroText">
+            En Iglesia Bautista Del Sur, compartimos el amor de Cristo con familias de nuestra
+            comunidad a través de la Palabra, la oración y el servicio.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#servicios" data-i18n="heroPrimary">Ver horarios</a>
+            <a class="button secondary" href="#contacto" data-i18n="heroSecondary">Planear visita</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-info" aria-label="Informacion principal">
+        <article>
+          <span data-i18n="quickServiceLabel">Servicio dominical</span>
+          <strong data-i18n="quickServiceValue">Domingos 11:00 AM</strong>
+        </article>
+        <article>
+          <span data-i18n="quickStudyLabel">Estudio bíblico</span>
+          <strong data-i18n="quickStudyValue">Miércoles 7:00 PM</strong>
+        </article>
+        <article>
+          <span data-i18n="quickLocationLabel">Ubicación</span>
+          <strong data-i18n="quickLocationValue">Agrega la dirección aquí</strong>
+        </article>
+      </section>
+
+      <section class="section split" id="nosotros">
+        <div>
+          <p class="section-kicker" data-i18n="aboutKicker">Nuestra iglesia</p>
+          <h2 data-i18n="aboutTitle">Fe bíblica, comunidad cercana y esperanza para cada familia.</h2>
+        </div>
+        <div class="section-copy">
+          <p data-i18n="aboutText">
+            Somos una congregación hispana que desea ayudar a cada persona a conocer a Jesús,
+            encontrar una familia espiritual y usar sus dones para bendecir a otros.
+          </p>
+          <p data-i18n="aboutTextTwo">
+            Ya sea que lleves años en la fe o estés visitando una iglesia por primera vez,
+            queremos recibirte con respeto, claridad y amor.
+          </p>
+        </div>
+      </section>
+
+      <section class="section schedule-section" id="servicios">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="servicesKicker">Reuniones</p>
+          <h2 data-i18n="servicesTitle">Horarios de servicios</h2>
+        </div>
+        <div class="schedule-grid">
+          <article class="schedule-card">
+            <span data-i18n="worshipDay">Domingo</span>
+            <h3 data-i18n="worshipTitle">Culto de adoración</h3>
+            <p data-i18n="worshipTime">11:00 AM</p>
+          </article>
+          <article class="schedule-card">
+            <span data-i18n="studyDay">Miércoles</span>
+            <h3 data-i18n="studyTitle">Estudio bíblico y oración</h3>
+            <p data-i18n="studyTime">7:00 PM</p>
+          </article>
+          <article class="schedule-card">
+            <span data-i18n="familyDay">Mensual</span>
+            <h3 data-i18n="familyTitle">Actividades familiares</h3>
+            <p data-i18n="familyTime">Fechas por anunciar</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section ministries-section" id="ministerios">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="ministriesKicker">Vida en comunidad</p>
+          <h2 data-i18n="ministriesTitle">Ministerios para servir y crecer</h2>
+        </div>
+        <div class="ministry-grid">
+          <article>
+            <h3 data-i18n="ministryFamiliesTitle">Familias</h3>
+            <p data-i18n="ministryFamiliesText">Apoyo espiritual y amistad para padres, matrimonios y hogares.</p>
+          </article>
+          <article>
+            <h3 data-i18n="ministryYouthTitle">Jóvenes</h3>
+            <p data-i18n="ministryYouthText">Espacios para crecer en la fe, hacer preguntas y formar amistades sanas.</p>
+          </article>
+          <article>
+            <h3 data-i18n="ministryServiceTitle">Servicio</h3>
+            <p data-i18n="ministryServiceText">Oportunidades para bendecir a la iglesia y a la comunidad local.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contacto">
+        <div>
+          <p class="section-kicker" data-i18n="contactKicker">Visítanos</p>
+          <h2 data-i18n="contactTitle">Nos encantaría conocerte.</h2>
+          <p data-i18n="contactText">
+            Si tienes preguntas sobre horarios, ubicación o cómo planear tu primera visita,
+            mándanos un mensaje y con gusto te ayudamos.
+          </p>
+        </div>
+        <form class="contact-form">
+          <label>
+            <span data-i18n="formName">Nombre</span>
+            <input type="text" name="name" autocomplete="name" />
+          </label>
+          <label>
+            <span data-i18n="formEmail">Correo electrónico</span>
+            <input type="email" name="email" autocomplete="email" />
+          </label>
+          <label>
+            <span data-i18n="formMessage">Mensaje</span>
+            <textarea name="message" rows="4"></textarea>
+          </label>
+          <button type="submit" data-i18n="formButton">Enviar mensaje</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span data-year></span> Iglesia Bautista Del Sur</p>
+      <p data-i18n="footerText">Compartiendo a Cristo con nuestra comunidad.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
