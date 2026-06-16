@@ -20,7 +20,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 118px;
 }
 
 body {
@@ -185,6 +184,10 @@ a {
 }
 
 .page-view {
+  display: none;
+}
+
+.page-view.is-active {
   display: block;
 }
 
@@ -195,7 +198,7 @@ a {
     var(--paper);
   display: grid;
   gap: clamp(28px, 5vw, 64px);
-  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.82fr);
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.68fr);
   min-height: auto;
   padding: clamp(56px, 7vw, 88px) clamp(18px, 5vw, 70px) clamp(44px, 6vw, 72px);
 }
@@ -218,22 +221,38 @@ a {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
-  box-shadow: 0 16px 40px rgba(32, 38, 43, 0.1);
+  box-shadow: 0 14px 34px rgba(32, 38, 43, 0.09);
   display: grid;
   gap: 12px;
-  padding: 16px;
+  margin-left: auto;
+  max-width: 500px;
+  padding: 14px;
 }
 
-.campus-card > span {
+.campus-card-header {
+  align-items: baseline;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.campus-card-header span {
   color: var(--clay);
   font-size: 0.76rem;
   font-weight: 800;
   text-transform: uppercase;
 }
 
+.campus-card-header strong {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 .hero-image {
   border-radius: 6px;
   height: auto;
+  max-height: 285px;
+  object-fit: contain;
   width: 100%;
 }
 
@@ -245,7 +264,7 @@ a {
   display: flex;
   gap: 16px;
   justify-content: space-between;
-  padding: 13px 15px;
+  padding: 11px 13px;
 }
 
 .hero-note span {
@@ -325,6 +344,31 @@ h2 {
   z-index: 3;
 }
 
+.home-directions {
+  align-items: center;
+  background: var(--navy);
+  color: var(--white);
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  padding-bottom: clamp(34px, 5vw, 48px);
+  padding-top: clamp(34px, 5vw, 48px);
+}
+
+.home-directions .section-kicker {
+  color: var(--gold);
+}
+
+.home-directions h2 {
+  font-size: clamp(1.45rem, 2.3vw, 2rem);
+  margin-bottom: 6px;
+}
+
+.home-directions p {
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0;
+}
+
 .quick-info article {
   border-right: 1px solid rgba(255, 255, 255, 0.22);
   padding: 20px clamp(18px, 4vw, 56px);
@@ -362,7 +406,6 @@ h2 {
     linear-gradient(90deg, rgba(23, 42, 53, 0.98), rgba(23, 42, 53, 0.9)),
     var(--navy);
   color: var(--white);
-  scroll-margin-top: 118px;
 }
 
 .page-hero.compact {
@@ -895,6 +938,7 @@ h2 {
 
   .quick-info,
   .hero,
+  .home-directions,
   .split,
   .two-column-band,
   .contact-section,
@@ -906,6 +950,11 @@ h2 {
   .schedule-grid,
   .schedule-grid.detailed {
     grid-template-columns: 1fr;
+  }
+
+  .home-directions {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .quick-info {

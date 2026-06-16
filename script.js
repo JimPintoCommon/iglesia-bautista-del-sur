@@ -7,6 +7,7 @@ const translations = {
     navAbout: "Nosotros",
     navServices: "Servicios",
     navSermons: "Predicaciones",
+    navBeliefs: "Creencias",
     navVisit: "Visitar",
     navContact: "Contacto",
     headerCta: "Planear visita",
@@ -28,6 +29,9 @@ const translations = {
     quickLocationValue: "124 Durffee St",
     homeKicker: "Lo esencial",
     homeIntroTitle: "Un lugar para conocer a Jesús y caminar acompañado.",
+    homeVisitKicker: "Visítanos",
+    homeVisitTitle: "Domingo a las 10:30 AM MT",
+    homeVisitText: "124 Durffee St, Syracuse, KS 67878",
     featureAboutLabel: "Nuestra historia",
     featureAboutTitle: "Conoce quiénes somos",
     featureAboutText: "Lee sobre nuestra fe, nuestros valores y el corazón de la iglesia.",
@@ -168,8 +172,8 @@ const translations = {
     footerAddress: "124 Durffee St, Syracuse, KS 67878",
     footerLinksTitle: "Enlaces",
     footerPrivacy: "Política de privacidad",
-    footerCredit: "Sitio creado por JP Web Solutions",
-    footerBuiltBy: "Diseño web por JP Web Solutions",
+    footerCredit: "Website by JP Web Solutions LLC",
+    footerBuiltBy: "Website design by JP Web Solutions LLC",
     privacyKicker: "Privacidad",
     privacyTitle: "Política de privacidad",
     privacyLead:
@@ -196,6 +200,7 @@ const translations = {
     navAbout: "About",
     navServices: "Services",
     navSermons: "Sermons",
+    navBeliefs: "Beliefs",
     navVisit: "Visit",
     navContact: "Contact",
     headerCta: "Plan a visit",
@@ -217,6 +222,9 @@ const translations = {
     quickLocationValue: "124 Durffee St",
     homeKicker: "Essentials",
     homeIntroTitle: "A place to know Jesus and walk with others.",
+    homeVisitKicker: "Visit us",
+    homeVisitTitle: "Sunday at 10:30 AM MT",
+    homeVisitText: "124 Durffee St, Syracuse, KS 67878",
     featureAboutLabel: "Our story",
     featureAboutTitle: "Learn who we are",
     featureAboutText: "Read about our faith, values, and the heart of the church.",
@@ -357,8 +365,8 @@ const translations = {
     footerAddress: "124 Durffee St, Syracuse, KS 67878",
     footerLinksTitle: "Links",
     footerPrivacy: "Privacy Policy",
-    footerCredit: "Website by JP Web Solutions",
-    footerBuiltBy: "Web design by JP Web Solutions",
+    footerCredit: "Website by JP Web Solutions LLC",
+    footerBuiltBy: "Website design by JP Web Solutions LLC",
     privacyKicker: "Privacy",
     privacyTitle: "Privacy Policy",
     privacyLead:
@@ -393,9 +401,15 @@ function getRouteFromHash() {
 function setActiveRoute(route) {
   const safeRoute = routes.includes(route) ? route : "home";
 
+  document.querySelectorAll("[data-route]").forEach((view) => {
+    view.classList.toggle("is-active", view.dataset.route === safeRoute);
+  });
+
   document.querySelectorAll("[data-route-link]").forEach((link) => {
     link.classList.toggle("is-active", link.dataset.routeLink === safeRoute);
   });
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function applyLanguage(language) {
