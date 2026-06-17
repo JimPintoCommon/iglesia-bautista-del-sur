@@ -51,10 +51,10 @@ const translations = {
       "Queremos que cada visita se sienta respetada y bien recibida. Nuestra iglesia existe para adorar a Dios, enseñar Su Palabra, fortalecer familias y formar creyentes que vivan su fe durante toda la semana.",
     aboutMissionTextTwo:
       "Ya sea que lleves años en la fe o estés empezando a buscar respuestas, aquí hay un lugar para escuchar, preguntar, aprender y caminar con otros.",
-    leadershipKicker: "Liderazgo pastoral",
-    leadershipTitle: "Pastor Fredi Gonzalez",
-    pastorLabel: "Pastor",
-    pastorPhoneLabel: "Teléfono pastoral",
+    leadershipKicker: "Liderazgo de servicio",
+    leadershipTitle: "Siervo de Dios Fredi Gonzalez",
+    servantLabel: "Siervo de Dios",
+    leaderPhoneLabel: "Teléfono de contacto",
     valuesKicker: "Valores",
     valuesTitle: "Lo que guía nuestra vida juntos",
     valueBibleTitle: "Palabra de Dios",
@@ -107,11 +107,11 @@ const translations = {
     sermonsKicker: "Predicaciones",
     sermonsTitle: "Sigue la predicación en vivo o mira mensajes recientes.",
     sermonsLead:
-      "Cuando el Pastor Fredi predique en línea, esta página puede llevar a los visitantes directamente a la transmisión o a los mensajes grabados.",
+      "Cuando Fredi Gonzalez comparta la Palabra en línea, esta página puede llevar a los visitantes directamente a la transmisión o a los mensajes grabados.",
     liveLabel: "En vivo",
     liveTitle: "Transmisión del servicio",
     liveText:
-      "La información de transmisión estará disponible pronto. Por ahora, llama a la iglesia para preguntar cómo ver las predicaciones del Pastor Fredi.",
+      "La información de transmisión estará disponible pronto. Por ahora, llama a la iglesia para preguntar cómo ver las predicaciones de Fredi Gonzalez.",
     streamCallButton: "Llamar para información",
     streamHelpButton: "Contacto",
     archiveLabel: "Mensajes recientes",
@@ -183,7 +183,7 @@ const translations = {
       "Si envías un formulario o haces clic para contactar a la iglesia, podemos recibir tu nombre, correo, teléfono y el mensaje que decidas compartir.",
     privacyUseTitle: "Cómo se utiliza",
     privacyUseText:
-      "La información se usa solamente para responder preguntas, coordinar visitas, compartir información de la iglesia o dar seguimiento pastoral cuando sea solicitado.",
+      "La información se usa solamente para responder preguntas, coordinar visitas, compartir información de la iglesia o dar seguimiento cuando sea solicitado.",
     privacyShareTitle: "Compartir información",
     privacyShareText:
       "La iglesia no vende información personal. Solo se comparte cuando sea necesario para responder tu solicitud o cuando la ley lo requiera.",
@@ -244,10 +244,10 @@ const translations = {
       "We want every visit to feel respected and welcomed. Our church exists to worship God, teach His Word, strengthen families, and form believers who live their faith all week long.",
     aboutMissionTextTwo:
       "Whether you have followed Jesus for years or are just beginning to look for answers, there is room here to listen, ask, learn, and walk with others.",
-    leadershipKicker: "Pastoral leadership",
-    leadershipTitle: "Pastor Fredi Gonzalez",
-    pastorLabel: "Pastor",
-    pastorPhoneLabel: "Pastoral phone",
+    leadershipKicker: "Servant leadership",
+    leadershipTitle: "Servant of God Fredi Gonzalez",
+    servantLabel: "Servant of God",
+    leaderPhoneLabel: "Contact phone",
     valuesKicker: "Values",
     valuesTitle: "What guides our life together",
     valueBibleTitle: "God's Word",
@@ -300,11 +300,11 @@ const translations = {
     sermonsKicker: "Sermons",
     sermonsTitle: "Follow the preaching live or watch recent messages.",
     sermonsLead:
-      "When Pastor Fredi preaches online, this page can send visitors directly to the live stream or recorded messages.",
+      "When Fredi Gonzalez shares the Word online, this page can send visitors directly to the live stream or recorded messages.",
     liveLabel: "Live",
     liveTitle: "Service stream",
     liveText:
-      "Streaming information will be available soon. For now, call the church to ask how to watch Pastor Fredi's preaching.",
+      "Streaming information will be available soon. For now, call the church to ask how to watch Fredi Gonzalez's preaching.",
     streamCallButton: "Call for information",
     streamHelpButton: "Contact",
     archiveLabel: "Recent messages",
@@ -376,7 +376,7 @@ const translations = {
       "If you submit a form or click to contact the church, we may receive your name, email, phone number, and the message you choose to share.",
     privacyUseTitle: "How it is used",
     privacyUseText:
-      "Information is used only to answer questions, coordinate visits, share church information, or provide pastoral follow-up when requested.",
+      "Information is used only to answer questions, coordinate visits, share church information, or provide follow-up when requested.",
     privacyShareTitle: "Sharing information",
     privacyShareText:
       "The church does not sell personal information. It is shared only when needed to respond to your request or when required by law.",

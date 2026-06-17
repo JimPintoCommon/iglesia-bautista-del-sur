@@ -552,7 +552,34 @@ h2 {
   padding-top: 0;
 }
 
+.leadership-profile {
+  align-items: stretch;
+  display: grid;
+  gap: 26px;
+  grid-template-columns: minmax(260px, 0.42fr) 1fr;
+}
+
+.leader-photo-frame {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(32, 38, 43, 0.06);
+  margin: 0;
+  min-height: 360px;
+  overflow: hidden;
+}
+
+.leader-photo-frame img {
+  display: block;
+  height: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center 24%;
+  width: 100%;
+}
+
 .leadership-card {
+  align-content: stretch;
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -565,7 +592,11 @@ h2 {
 
 .leadership-card > div {
   background: var(--white);
-  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 160px;
+  padding: 28px;
 }
 
 .leadership-card span {
@@ -913,6 +944,14 @@ h2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .leadership-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .leader-photo-frame {
+    min-height: 420px;
+  }
+
   .feature-grid,
   .leadership-card,
   .value-grid,
@@ -947,12 +986,21 @@ h2 {
   .contact-section,
   .visit-layout,
   .stream-section,
+  .leadership-card,
   .feature-grid,
   .value-grid,
   .beliefs-grid,
   .schedule-grid,
   .schedule-grid.detailed {
     grid-template-columns: 1fr;
+  }
+
+  .leader-photo-frame {
+    min-height: 340px;
+  }
+
+  .leader-photo-frame img {
+    max-height: 440px;
   }
 
   .home-directions {
