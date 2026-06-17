@@ -7,6 +7,13 @@
       name="description"
       content="Iglesia Bautista Del Sur: una iglesia hispana centrada en Cristo, la familia y la comunidad."
     />
+    <meta property="og:title" content="Iglesia Bautista Del Sur" />
+    <meta
+      property="og:description"
+      content="Una iglesia hispana en Syracuse, Kansas, centrada en Cristo, la familia y la comunidad."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/church-logo.png" />
     <title>Iglesia Bautista Del Sur</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +22,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="assets/church-logo.png" />
   </head>
   <body>
     <header class="site-header">
@@ -38,6 +46,7 @@
           <a href="#services" data-route-link="services" data-i18n="navServices">Servicios</a>
           <a href="#sermons" data-route-link="sermons" data-i18n="navSermons">Predicaciones</a>
           <a href="#beliefs" data-route-link="beliefs" data-i18n="navBeliefs">Creencias</a>
+          <a href="#ministries" data-route-link="ministries" data-i18n="navMinistries">Ministerios</a>
           <a href="#visit" data-route-link="visit" data-i18n="navVisit">Visitar</a>
           <a href="#contact" data-route-link="contact" data-i18n="navContact">Contacto</a>
         </nav>
@@ -440,8 +449,8 @@
           <p class="eyebrow" data-i18n="contactKicker">Contacto</p>
           <h1 id="contact-title" data-i18n="contactTitle">Nos encantaría conocerte.</h1>
           <p data-i18n="contactLead">
-            Usa esta página para agregar la información real de la iglesia: dirección, teléfono,
-            correo, redes sociales y un formulario conectado.
+            Si tienes preguntas, deseas visitar o necesitas hablar con alguien, comunícate con la
+            iglesia y con gusto te orientamos.
           </p>
         </section>
 
@@ -496,6 +505,7 @@
               <textarea name="message" rows="5"></textarea>
             </label>
             <button type="submit" data-i18n="formButton">Enviar mensaje</button>
+            <p class="form-note" data-i18n="formNote">El formulario estará disponible pronto. Por ahora, llama a la iglesia para comunicarte directamente.</p>
           </form>
         </section>
       </section>
@@ -538,9 +548,22 @@
 
     <footer class="site-footer">
       <div class="footer-grid">
-        <div>
-          <strong>Iglesia Bautista Del Sur</strong>
+        <div class="footer-brand">
+          <a class="footer-logo" href="#home" data-route-link="home" aria-label="Iglesia Bautista Del Sur">
+            <img src="assets/church-logo.png" alt="Iglesia Bautista Del Sur logo" />
+            <span>Iglesia Bautista Del Sur</span>
+          </a>
           <p data-i18n="footerText">Compartiendo a Cristo con nuestra comunidad.</p>
+          <div class="footer-actions">
+            <a class="footer-button" href="tel:6203848104" data-i18n="footerCall">Llamar</a>
+            <a
+              class="footer-button secondary"
+              href="https://www.google.com/maps/search/?api=1&query=Bible%20Baptist%20Church%2C%20124%20Durffee%20Street%2C%20Syracuse%2C%20Kansas%2067878%2C%20United%20States"
+              target="_blank"
+              rel="noopener"
+              data-i18n="footerDirections"
+            >Cómo llegar</a>
+          </div>
         </div>
         <div>
           <h2 data-i18n="footerVisitTitle">Visítanos</h2>
@@ -554,15 +577,20 @@
         </div>
         <nav class="footer-links" aria-label="Footer">
           <h2 data-i18n="footerLinksTitle">Enlaces</h2>
+          <a href="#services" data-route-link="services" data-i18n="navServices">Servicios</a>
+          <a href="#visit" data-route-link="visit" data-i18n="navVisit">Visitar</a>
+          <a href="#ministries" data-route-link="ministries" data-i18n="navMinistries">Ministerios</a>
+          <a href="#beliefs" data-route-link="beliefs" data-i18n="navBeliefs">Creencias</a>
+          <a href="#sermons" data-route-link="sermons" data-i18n="navSermons">Predicaciones</a>
           <a href="#privacy" data-route-link="privacy" data-i18n="footerPrivacy">Política de privacidad</a>
-          <a href="https://www.jpwebsolutions.com/" target="_blank" rel="noopener" data-i18n="footerCredit">
-            Website by JP Web Solutions LLC
-          </a>
         </nav>
       </div>
       <div class="footer-bottom">
         <p>&copy; <span data-year></span> Iglesia Bautista Del Sur</p>
-        <p data-i18n="footerBuiltBy">Website design by JP Web Solutions LLC</p>
+        <p>
+          <span data-i18n="footerBuiltBy">Website designed by</span>
+          <a href="https://www.jpwebsolutions.com/" target="_blank" rel="noopener">JP Web Solutions LLC</a>
+        </p>
       </div>
     </footer>
 
